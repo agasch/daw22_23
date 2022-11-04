@@ -46,5 +46,5 @@ Llevame al sircoo se calle ustée.
 
 No puedor de la pradera
   1. no te digo trigo
-  2. por no llamarte Rodrigor
-  3. llevame al sircoo.
+  1. por no llamarte Rodrigor
+  1. llevame al sircoo.
