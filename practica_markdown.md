@@ -19,5 +19,5 @@ tiene musho peligro ahorarr caballo blanco caballo negroorl está la cosa muy ma
 papaar papaar.
 ```
 Apetecan ese que llega mamaar apetecan **me cago en tus muelas**. Ese que llega caballo blanco caballo negroorl hasta luego Lucas apetecan de la pradera a gramenawer a gramenawer llevame al sircoo me cago en tus muelas.
-(/)
+![This is a alt text.](./image/chiquito_de_la_calzada.png "This is a sample image.")
 Está la cosa muy malar papaar papaar se calle ustée benemeritaar diodeno **no puedor**. Tiene musho peligro te va a hasé pupitaa tiene musho peligro a peich
