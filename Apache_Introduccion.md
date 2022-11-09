@@ -49,6 +49,7 @@ Apache (v6)                ALLOW       Anywhere (v6)
 ```
 
 ## Comprobar su servidor web
+En este apartado, se realizarán las comprobaciones para confirmar que Apache se ha instalado y todo funciona correctamente.
 
 Tras toda la instalación del servicio, inicialo con el comando:
 ```
@@ -79,4 +80,29 @@ sudo systemctl status apache2
 hostname -I
 ```
 
-
+## Administrar el proceso de Apache
+En este apartado, se pretende dejar en claro algunos comandos de administración básicos con *systemctl*.
+  * Para detener su servidor web:
+```
+sudo systemctl stop apache2
+```
+  * Para iniciar el servidor web cuando no esté activo:
+```
+sudo systemctl start apache2
+```
+  * Para detener y luego iniciar el servicio de nuevo:
+```
+sudo systemctl restart apache2
+```
+  * Si solo realiza cambios de configuración, Apache a menudo puede recargarse sin cerrar conexiones:
+```
+sudo systemctl reload apache2
+```
+  * Para que Apache no se inicie automaticamente cuando arranque el servidor:
+```
+sudo systemctl disable apache2
+```
+  * Para que Apache se inicie automaticamente cuando arranque el servidor:
+```
+sudo systemctl enable apache2
+```
