@@ -25,3 +25,19 @@ Is the information correct? [Y/n]   //si toda la información (rellenada o no) e
 
 ## Parte del cliente
 En este apartado se te indicarán los pasos a seguir para que desde el cliente, puedas conectarte al servidor **ssh**, instalar **apache** en el servidor, pasar una web a un lugar del servidor, crear un virtualhost, modificar los host del local para para que con la dirección elegida vaya a la ip del servidor, comprobar que te te puedes conectar a la pagina y a abrir un browser en el buscador.
+
+Pero empecemos por el principio, instala el servicio **ssh** con el siguiente comando:
+```
+sudo apt install ssh client
+```
+### Conectarse al servidor mediante ssh
+Para establecer una conexion el servidor, ejecuta el siguiente comando:
+```
+ssh nombre_usuario@ip_servidor
+```
+>En este caso, lo que se veria por pantalla sería:
+>ssh agasch@192.168.0.136
+
+
+
+
