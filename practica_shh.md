@@ -3,7 +3,7 @@ Alex Gasch y Sergio Azogue
 **SSH** es una herramienta esencial para ser un administrador de sistemas experto. SSH, o *Secure Shell*, es un protocolo que se utiliza para iniciar sesión de forma segura en sistemas remotos. Es la forma más común de acceder a servidores Linux remotos. En esta guía, analizaremos cómo usar SSH para 
 conectarse a un sistema remoto.
 
->Requisitos necesarios: antes de meternos en materia, tendrás que haber completado con exito el resto de las actividades anteriores para completar esta (por lo menos hasta la actividad  **__Apache: Configuración__**)
+>Requisitos necesarios: antes de meternos en materia, tendrás que haber completado con exito el resto de las actividades anteriores para completar esta (por lo menos hasta la actividad  **_Apache: Configuración_**)
  
 ## Parte del servidor
 Lo único que debes hacer si estás realizando la parte del servidor, es crear un usuario con el siguiente comando:
@@ -38,6 +38,16 @@ ssh nombre_usuario@ip_servidor
 >En este caso, lo que se veria por pantalla sería:
 >ssh agasch@192.168.0.136
 
+>**Como curiosidad, si ejecutamos el comando _whoami_, nos aparecerá el nombre del usuario con el que estamos conectados**.
 
+### Instalar Apache en el servidor 
+>Si el servidor ya tenia instalado apache por las actividades anteriores, deberás desinstalarlo mediante el siguiente comando:
+```
+sudo apt remove apache2 
+```
+Para instalar en el servidor el servicio **Apache**, debes ejecutar el siguiente comando:
+```
+sudo apt install apache2
+```
 
 
