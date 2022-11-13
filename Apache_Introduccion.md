@@ -170,3 +170,13 @@ sudo a2dissite 000-default.conf
 >sudo apache2ctl configtest
 >```
 
+>>Si todo ha salido bien, por pantalla se te mostrará el siguiente mensaje:
+>>```
+>>Output
+>>Syntax OK
+>>```
+
+Reinicia apache para establecer los camios:
+```
+sudo systemctl restart apache2
+```
