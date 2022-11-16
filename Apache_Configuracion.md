@@ -48,6 +48,9 @@ Te aparecerán muchas lineas de texto, las que te interesa modificar son la del 
 </VirtualHost>
 ```
 Edita el archivo hosts y agrega la linea de tu dominio:
+```
+sudo nano /etc/hosts
+```
 
 ### Activar archivo daw22_23
 Por ir terminando la configuración y tener habilitado la configuración del VirtualHost, escribe el siguiente comando:
