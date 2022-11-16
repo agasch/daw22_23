@@ -24,6 +24,9 @@ Verifica la disponibilidad de Apache Tomcat en el repositorio
 sudo apt-cache search tomcat
 ```
 >Verifica que la siguiente linea aparece por pantalla al ejecutar el dicho comando (por las últimas líneas).
+>```
+>tomcat9-user - Apache Tomcat 9 - Servlet and JSP engine
+>```
 
 ## Instalar Servidor Apache Tomcat
 Despues de encontrar los requisitos del paquete **Apache Tomcat**, inatalalo con el siguiente comando
