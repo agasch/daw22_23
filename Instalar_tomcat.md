@@ -52,3 +52,6 @@ sudo ufw allow from any to any port 8080 proto tcp
 >Reglas actualizadas
 >Reglas actualizadas (v6)
 >```
+
+## Verificar resultado
+Para verificar que todo el proceso ha salido como toca, vete a la barra de navegación de tu buscador favorito, introduce **http://127.0.0.1:8080**, y si ves en grande y negrita el ansiado _IT WORKS_, has completado la instalación con éxito.
