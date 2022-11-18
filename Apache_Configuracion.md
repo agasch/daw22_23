@@ -62,7 +62,7 @@ sudo nano /etc/hosts
 >ff00::0 ip6-mcastprefix
 >ff02::1 ip6-allnodes
 >ff02::2 ip6-allrouters
->127.0.0.1 daw22_23.es	    //esta es la línea de tu dominio (si no existe ningún otro, asegurate que la IP es 127.0.0.1)
+>127.0.0.1 daw22_23.es	  //esta es la línea de tu dominio (si no existe ningún otro, asegurate que la IP es 127.0.0.1)
 >```
 ### Activar archivo daw22_23
 Por ir terminando la configuración y tener habilitado la configuración del VirtualHost, escribe el siguiente comando:
