@@ -153,5 +153,11 @@ Es decir, que estaba poniendo la contraseña como usuario. Además que la contra
 Se ha completado con éxito todos y cada uno de los apartados de este examen, desde el acceso remoto para crear una carpeta con nuestro nombre junto a un documento, pasando por la descarga de una imagen mediante comandos, y la creación de un VirtualHost en local. Sin mencionar claro, la creación de este documento y la redacción de todos sus apartados.
 
 ## Bibliografia i anexos
- * Para el ejercicio de la descarga de la imagen, he consultado:
-  *  
+Para el apartado de la descarga de la imagen, he consultado:
+  *  https://websetnet.net/es/2-ways-to-download-files-from-linux-terminal/
+  *  https://ubunlog.com/descargar-archivos-desde-terminal-ubuntu/
+  *  https://ubunlog.com/wget-ejemplos-hacer-herramienta/
+
+Para el apartado del VirtualHost he usado:
+ * https://github.com/agasch/daw22_23/blob/master/Apache_Introduccion.md
+ * https://github.com/agasch/daw22_23/blob/master/Apache_Configuracion.md
