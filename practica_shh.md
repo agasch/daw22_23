@@ -41,13 +41,6 @@ ssh nombre_usuario@ip_servidor
 >**Como curiosidad, si ejecutamos el comando _whoami_, nos aparecerá el nombre del usuario con el que estamos conectados**.
 
 ### Instalar Apache en el servidor 
->Si el servidor ya tenia instalado apache por las actividades anteriores, deberás desinstalarlo mediante el siguiente comando:
-```
-sudo apt remove apache2 
-```
-Para instalar en el servidor el servicio **Apache**, debes ejecutar el siguiente comando:
-```
-sudo apt install apache2
-```
+Para instalar **Apache** en el servidor, esigue los pasos descritos en [este documento](https://github.com/agasch/daw22_23/blob/master/Apache_Introduccion.md)
 
 
