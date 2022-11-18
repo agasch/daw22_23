@@ -36,7 +36,7 @@ En este apartado se te indicarán los pasos a seguir para que desde el cliente, 
 
 Pero empecemos por el principio, instala el servicio **ssh** con el siguiente comando:
 ```
-sudo apt install ssh client
+sudo apt install ssh
 ```
 ### Conectarse al servidor mediante ssh
 Para establecer una conexion el servidor, ejecuta el siguiente comando:
@@ -50,3 +50,29 @@ ssh nombre_usuario@ip_servidor
 
 ### Instalar Apache en el servidor 
 Para instalar **Apache** en el servidor, esigue los pasos descritos en [este documento](https://github.com/agasch/daw22_23/blob/master/Apache_Introduccion.md).
+### Crear un virtualhost
+Para crear un virtualhost, sigue los pasos indicados el [este documento](https://github.com/agasch/daw22_23/blob/master/Apache_Configuracion.md).
+### Modificar los host locales para que con la dirección elegida vaya a la ip del servidor
+Cierra la sesión ssh.
+```
+exit
+```
+Accede al archivo _hosts_
+```
+sudo nano /etc/hosts
+```
+>Agrega al final del archivo la direccion **IP del servidor** y el **ServerName** elegido:
+>```
+>127.0.0.1       localhost
+>127.0.1.1       daw
+>
+># The following lines are desirable for IPv6 capable hosts
+>::1     ip6-localhost ip6-loopback
+>fe00::0 ip6-localnet
+>ff00::0 ip6-mcastprefix
+>ff02::1 ip6-allnodes
+>ff02::2 ip6-allrouters
+>192.168.0.136 holabuenastardes.com  //IP_server y ServerName
+>```
+
+Si lo has hecho todo bien, al abrir un navegador y buscar el Servername, te aparecerá la misma página
