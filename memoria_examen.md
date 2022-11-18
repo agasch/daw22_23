@@ -4,11 +4,64 @@ Para no repetirme, desde este punto digo que lo hago todo en una misma ventana d
 ##  Apartado 2
 Abro una ventana de terminal y ejecuto el siguiente comando:
 ```
-sudo ssh DAMWDAWM@192.168.0.168
+sudo ssh usuario@192.168.0.168
 ```
-Al ejecutarlo, me pide la contraseña de mi usuario, la escribo, pero me falla la conexión.
-Pruebo a actualizar el equipo con los comandos:
+Al ejecutarlo, me sale la siguiente lineas (es lo más normal porque es la primera vez que intento conectarme a ese ordenador):
 ```
-sudo apt update
-sudo apt upgrade
+The authenticity of host '192.168.0.168 (192.168.0.168)' can't be established.
+ECDSA key fingerprint is SHA256:iWkyi99XmZvsg5KHNJYRhUmMeitc3CltsPGZtX88Pfw.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
+Escribo **yes** y procedo a escribir la contraseña del usuario.
+```
+usuario@192.168.0.168's password: 
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.13.0-30-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Se pueden aplicar 172 actualizaciones de forma inmediata.
+101 de estas son actualizaciones de seguridad estándares.
+Para ver estas actualizaciones adicionales ejecute: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+New release '22.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+2 updates could not be installed automatically. For more details,
+see /var/log/unattended-upgrades/unattended-upgrades.log
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Fri Nov 18 15:54:32 2022 from 192.168.0.136
+usuario@usuario-OptiPlex-380:~$               //ya estoy dentro del otro equipo con el usuario de esta
+```
+Accedo al directorio _/var/www/_
+```
+cd /var/www/
+```
+Ahora creo un directorio con mi nombre con el comando:
+```
+mkdir alex_gasch
+```
+Me da error porque "no tengo permisos" así que ejecuto el siguiente comando:
+```
+sudo mkdir alex_gasch
+```
+Como ahora sí que he podido, procedo a acceder a él.
+```
+cd alex_gasch/
+```
+Para crear un archivo en el directorio, ejecuto el comando:
+```
+sudo nano ejercicio2.txt
+```
+En la ventana de edición del archivo escribo: "Conseguido". Utilizo el juego de teclas Ctrl+o (para guardar las modificaciones), y Ctrl+x (para salir del archivo).
+
+![image](https://user-images.githubusercontent.com/113713815/202740502-95fa498d-2e2c-418e-9e40-2c1f91cedc62.png)
+
+
+
+
