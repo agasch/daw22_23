@@ -6,22 +6,30 @@ conectarse a un sistema remoto.
 >Requisitos necesarios: antes de meternos en materia, tendrás que haber completado con exito el resto de las actividades anteriores para completar esta (por lo menos hasta la actividad  **_Apache: Configuración_**)
  
 ## Parte del servidor
-Lo único que debes hacer si estás realizando la parte del servidor, es crear un usuario con el siguiente comando:
+### Crear nuevo usuario
+Para crear un usuario en tu equipo, ejecuta el siguiente comando:
 ```
 adduser NOMBRE_DE_USUARIO
 ```
-Esto es lo que te aparecerá por pantalla:
+>Esto es lo que te aparecerá por pantalla:
+>```
+>Changing the user information for agasch
+>Enter the new value, or press ENTER for the default
+>        Full Name [ ]:         //campo opcional
+>        Room Number [ ]:       //campo opcional
+>        Work Phone [ ]:        //campo opcional
+>        Home Phone [ ]:        //campo opcional
+>        Other [ ]:             //campo opcional
+>Is the information correct? [Y/n]   //si toda la información (rellenada o no) es correcta, pulsa Y
+>```
+
+>>Si no hiciste la instalación y configuración de **Apache**, deberás realizarla y luego seguir con esta practica.
+
+### Buscar la IP del ordenador
+Para averiguar cual es la ip de tu ordenador, escribe y ejecuta el siguiente comando:
 ```
-Changing the user information for agasch
-Enter the new value, or press ENTER for the default
-        Full Name [ ]:         //campo opcional
-        Room Number [ ]:       //campo opcional
-        Work Phone [ ]:        //campo opcional
-        Home Phone [ ]:        //campo opcional
-        Other [ ]:             //campo opcional
-Is the information correct? [Y/n]   //si toda la información (rellenada o no) es correcta, pulsa Y
+ip a
 ```
->Si no hiciste la instalación y configuración de **Apache**, deberás realizarla y luego seguir con esta practica.
 
 ## Parte del cliente
 En este apartado se te indicarán los pasos a seguir para que desde el cliente, puedas conectarte al servidor **ssh**, instalar **apache** en el servidor, pasar una web a un lugar del servidor, crear un virtualhost, modificar los host del local para para que con la dirección elegida vaya a la ip del servidor, comprobar que te te puedes conectar a la pagina y a abrir un browser en el buscador.
@@ -41,6 +49,4 @@ ssh nombre_usuario@ip_servidor
 >**Como curiosidad, si ejecutamos el comando _whoami_, nos aparecerá el nombre del usuario con el que estamos conectados**.
 
 ### Instalar Apache en el servidor 
-Para instalar **Apache** en el servidor, esigue los pasos descritos en [este documento](https://github.com/agasch/daw22_23/blob/master/Apache_Introduccion.md)
-
-
+Para instalar **Apache** en el servidor, esigue los pasos descritos en [este documento](https://github.com/agasch/daw22_23/blob/master/Apache_Introduccion.md).
