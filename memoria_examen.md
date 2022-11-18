@@ -126,5 +126,16 @@ sudo nano examen_agasch.conf
 >DocumentRoot /var/www/examen_agasch       //en la que escribo el nombre del direcctorio que he creado en el paso anterior.
 >ServerName daw.ejercicio4.com            //escribe la url que quiero para el dominio
 >```
+>>Cuando finalizo, guardo los cambios y lo cierro con el mmismo juego de teclas descrito antes.
+
+Edito el archivo hosts:
+```
+sudo nano /etc/hosts
+```
+Le agrego la siguiente linea (asegurandome que la ip 127.0.0.1 no la tiene ningún otro dominio):
+>```
+>127.0.0.1 daw.ejercicio4.com
+>```
+
 
 
