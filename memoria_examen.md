@@ -137,5 +137,10 @@ Le agrego la siguiente linea (asegurandome que la ip 127.0.0.1 no la tiene ningÃ
 >127.0.0.1 daw.ejercicio4.com
 >```
 
+Para terminar, habilito el archivo de configuracion y reinicio apache:
+```
+sudo a2ensite examen_agasch.conf
+systemctl reload apache2
+```
 
 
