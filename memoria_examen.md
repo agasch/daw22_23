@@ -60,6 +60,18 @@ sudo nano ejercicio2.txt
 ```
 En la ventana de edición del archivo escribo: "Conseguido". Utilizo el juego de teclas Ctrl+o (para guardar las modificaciones), y Ctrl+x (para salir del archivo).
 
+## Apartado 3
+Para descargar la imagen en remoto, he consultado un par de paginas web (que dejo el enlace a ellas en este documento). Para poder realizarlo, se usa el siguiente comando:
+```
+sudo curl -o daw.png https://iesalandalus.org/ciclos/semipresencial/daw-sp/daw.png
+```
+>Lo que se verá por pantalla será lo siguiente:
+>```
+>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+>                                 Dload  Upload   Total   Spent    Left  Speed
+>100   707  100   707    0     0   5795      0 --:--:-- --:--:-- --:--:--  5795
+>curl: (6) Could not resolve host: ciclos
+>```
 ![image](https://user-images.githubusercontent.com/113713815/202740502-95fa498d-2e2c-418e-9e40-2c1f91cedc62.png)
 
 
