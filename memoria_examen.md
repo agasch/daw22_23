@@ -142,5 +142,16 @@ Para terminar, habilito el archivo de configuracion y reinicio apache:
 sudo a2ensite examen_agasch.conf
 systemctl reload apache2
 ```
+# Problemas
+El único problema que he tenido ha sido a la hora de realizar el ssh, que no habia entendido bien la parte de el usuario y por tanto, estaba ejecutando este comando:
+```
+sudo ssh DAMWDAWM@192.168.0.168
+```
+Es decir, que estaba poniendo la contraseña como usuario. Además que la contraseña que estaba poniendo era la mia porque me la estaba solicitando. 
 
+## Resultados
+Se ha completado con éxito todos y cada uno de los apartados de este examen, desde el acceso remoto para crear una carpeta con nuestro nombre junto a un documento, pasando por la descarga de una imagen mediante comandos, y la creación de un VirtualHost en local. Sin mencionar claro, la creación de este documento y la redacción de todos sus apartados.
 
+## Bibliografia i anexos
+ * Para el ejercicio de la descarga de la imagen, he consultado:
+  *  
