@@ -44,13 +44,9 @@ cd /var/www/
 ```
 Ahora creo un directorio con mi nombre con el comando:
 ```
-mkdir alex_gasch
-```
-Me da error porque "no tengo permisos" así que ejecuto el siguiente comando:
-```
 sudo mkdir alex_gasch
 ```
-Como ahora sí que he podido, procedo a acceder a él.
+Procedo a acceder a él.
 ```
 cd alex_gasch/
 ```
