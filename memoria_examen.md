@@ -72,8 +72,58 @@ sudo curl -o daw.png https://iesalandalus.org/ciclos/semipresencial/daw-sp/daw.p
 >100   707  100   707    0     0   5795      0 --:--:-- --:--:-- --:--:--  5795
 >curl: (6) Could not resolve host: ciclos
 >```
+
+### Resultado de los apartados 2 y 3
 ![image](https://user-images.githubusercontent.com/113713815/202740502-95fa498d-2e2c-418e-9e40-2c1f91cedc62.png)
 
+## Apartado 4
+Primero que nada, cierro sesión en el ssh con el comando:
+```
+ exit
+```
+>Lo que se ve por pantalla:
+>```
+>cerrar sesión
+>Connection to 192.168.0.168 closed.
+>```
+Crea un directorio para tu dominio con el siguiente comando:
+```
+sudo mkdir /var/www/examen_agasch
+```
+Asigno la propiedad del directorio con la variable de entorno $USER:
+```
+sudo chown -R $USER:$USER /var/www/examen_agasch
+```
+Le doy permisos:
+```
+sudo chmod -R 755 /var/www/examen_agasch
+```
+Ahora, creo la página index.html utilizando nano.
+```
+sudo nano /var/www/examen_agasch/index.html
+```
+>Dentro del documento escribo los siguiente:
+>```
+>html>
+>  <head></head>
+>  <body>
+>        <h1>ALEX GASCH BLASCO</h1>
+>  </body>
+></html>
+>```
 
-
+Para que apache pueda acceder a este archivo, copio el contenido del archivo de configuracion de apache por defecto a uno nuevo:
+```
+cd /etc/apache2/sites-available/
+sudo cp 000-default.conf examen_agasch.conf
+```
+Ahora, accedo a el para editarlo y modificar unas líneas:
+```
+sudo nano examen_agasch.conf
+```
+>Edito las lineas:
+>```
+>DocumentRoot /var/www/examen_agasch       //en la que escribo el nombre del direcctorio que he creado en el paso anterior.
+>ServerName daw.ejercicio4.com            //escribe la url que quiero para el dominio
+>```
 
