@@ -51,7 +51,19 @@ Edita el archivo hosts y agrega la linea de tu dominio:
 ```
 sudo nano /etc/hosts
 ```
-
+>Así es como te deberá quedar el archivo tras agregar tu dominio:
+>```
+>127.0.0.1	localhost
+>127.0.1.1	daw
+>
+># The following lines are desirable for IPv6 capable hosts
+>::1     ip6-localhost ip6-loopback
+>fe00::0 ip6-localnet
+>ff00::0 ip6-mcastprefix
+>ff02::1 ip6-allnodes
+>ff02::2 ip6-allrouters
+>127.0.0.1 daw22_23.es	    //esta es la línea de tu dominio (si no existe ningún otro, asegurate que la IP es 127.0.0.1)
+>```
 ### Activar archivo daw22_23
 Por ir terminando la configuración y tener habilitado la configuración del VirtualHost, escribe el siguiente comando:
 ```
