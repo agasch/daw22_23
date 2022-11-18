@@ -6,7 +6,7 @@ Abro una ventana de terminal y ejecuto el siguiente comando:
 ```
 sudo ssh usuario@192.168.0.168
 ```
-Al ejecutarlo, me sale la siguiente lineas (es lo más normal porque es la primera vez que intento conectarme a ese ordenador):
+Al ejecutarlo, me sale la siguiente lineas:
 ```
 The authenticity of host '192.168.0.168 (192.168.0.168)' can't be established.
 ECDSA key fingerprint is SHA256:iWkyi99XmZvsg5KHNJYRhUmMeitc3CltsPGZtX88Pfw.
