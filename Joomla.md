@@ -27,4 +27,18 @@ docker volume create mysql-data
 >```
 >docker volume inspect mysql-data
 >```
+>Este debería ser el resultado que te sale si tu también lo haces:
+>```
+>[
+    {
+        "CreatedAt": "2020-09-21T01:38:07Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/mysql-data/_data",
+        "Name": "mysql-data",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+>```
 >
