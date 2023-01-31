@@ -1,4 +1,5 @@
 # Instalación de Joomla
+## Comandos en terminal
 En mi caso, instalaremos _Joomla_ en **Docker**, para ello, lo primero que hago es actualizar los repositorios de mi equipo **Ubuntu mate 20.04**:
 ```
 sudo apt-get update
@@ -67,9 +68,9 @@ docker volume create joomla-data
 >    }
 >]
 >```
-Inicie un contenedor MySQL con almacenamiento de datos persistente.
-```
+
 Inicie un contenedor de Joomla con almacenamiento de datos persistente.
 ```
 docker run -d --name joomla -p 80:80 -v joomla-data:/var/www/html --network joomla-network -e JOOMLA_DB_HOST=joomladb -e JOOMLA_DB_USER=joomla -e JOOMLA_DB_PASSWORD=kamisama123 joomla
 ```
+## Instalación de Joomla
