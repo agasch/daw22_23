@@ -49,3 +49,27 @@ Creo un volumen acoplable para almacenar los datos persistentes de Joomla.
 ```
 docker volume create joomla-data
 ```
+>Para comprobar el directorio de datos persistentes, ejecuto el sigiente comando:
+>```
+>docker volume inspect joomla-data
+>```
+>Este debería ser el resultado que te sale si tu también lo haces:
+>```
+>[
+>    {
+>        "CreatedAt": "2020-09-21T01:52:06Z",
+>        "Driver": "local",
+>        "Labels": {},
+>        "Mountpoint": "/var/lib/docker/volumes/joomla-data/_data",
+>        "Name": "joomla-data",
+>        "Options": {},
+>        "Scope": "local"
+>    }
+>]
+>```
+Inicie un contenedor MySQL con almacenamiento de datos persistente.
+```
+Inicie un contenedor de Joomla con almacenamiento de datos persistente.
+```
+docker run -d --name joomla -p 80:80 -v joomla-data:/var/www/html --network joomla-network -e JOOMLA_DB_HOST=joomladb -e JOOMLA_DB_USER=joomla -e JOOMLA_DB_PASSWORD=kamisama123 joomla
+```
