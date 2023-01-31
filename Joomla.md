@@ -41,3 +41,11 @@ docker volume create mysql-data
 >    }
 >]
 >```
+Inicie un contenedor MySQL con almacenamiento de datos persistente.
+```
+docker run -d --name joomladb  -v mysql-data:/var/lib/mysql --network joomla-network -e "MYSQL_ROOT_PASSWORD=kamisama123" -e MYSQL_USER=joomla -e "MYSQL_PASSWORD=kamisama123" -e "MYSQL_DATABASE=joomla" mysql:5.7
+```
+Creo un volumen acoplable para almacenar los datos persistentes de Joomla.
+```
+docker volume create joomla-data
+```
