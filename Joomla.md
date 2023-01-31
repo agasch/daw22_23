@@ -39,6 +39,6 @@ docker volume create mysql-data
         "Options": {},
         "Scope": "local"
     }
-]
+ ]
 >```
 >
